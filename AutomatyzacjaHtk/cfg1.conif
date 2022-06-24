@@ -1,0 +1,30 @@
+﻿#katalog bazowy
+ROOT_DIR=C:\\htk
+#plik z definicją gramatyki
+GRAMMAR=networks\\grammar
+#to samo co wyżej tylko w formacie HTK
+LATTICE=networks\\wdnet
+#słownik nazwy modeli <-> zapis gramatyczny
+DICTONARY=networks\\dict
+#plik z definicją parametryzacji
+AUDIOCONFIG=configs\\audio.config
+#Master Label File - transkrypcja
+MLF=labels\\audio.mlf
+#lista plików treningowych
+TRAIN_LIST=lists\\train.list
+#plik z prototypem modelu HMM
+PROTO_DEF=proto\\proto.txt
+#liczba kroków treningowych
+TRAIN_STEPS=5
+#lista plików do testów
+TEST_LIST=lists\\test.list
+#plik z wytrenowanymi modelami
+MODELS=work\\cfg1\\hmms\hmm.5\\hmmdefs
+#lista modeli do treningu, do rozpoznawania
+MODEL_LIST=lists\\models0
+#katalog roboczy
+WORK_DIR=work\\NAME
+#plik z wynikiem rozpoznawaniw - moze byc generowany automatycznie na podstawie NAME i TRAIN_LIST
+RESULTS=results\\test.res
+#inne parametry
+HVITE_PARAMS=–o N
